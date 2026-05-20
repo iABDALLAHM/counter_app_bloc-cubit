@@ -1,9 +1,11 @@
 import 'package:counter_app/logic/counter_bloc/counter_bloc.dart';
 import 'package:counter_app/presentation/screens/home_screen.dart';
+import 'package:counter_app/simple_bloc_observer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-void main() async {
+void main() {
+  Bloc.observer = SimpleBlocObserver();
   runApp(const MyApp());
 }
 
